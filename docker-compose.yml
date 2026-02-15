@@ -30,6 +30,7 @@ services:
       - "8080:80"
     volumes:
       - joomla_data:/var/www/html
+      - ./:/workspace
       - ./joomla-component:/opt/joomla-component
 
 volumes:
