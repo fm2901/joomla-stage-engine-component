@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+  <name>com_stageengine</name>
+  <author>Fayziev Muminjon</author>
+  <creationDate>2026-02-15</creationDate>
+  <version>1.0.0</version>
+  <description>CRM Stage Engine Component</description>
+  <namespace path="src">Joomla\Component\Stageengine</namespace>
+  <scriptfile>script.php</scriptfile>
+
+  <install>
+    <sql>
+      <file driver="mysql" charset="utf8mb4">sql/install.mysql.utf8.sql</file>
+    </sql>
+  </install>
+
+  <administration>
+    <menu>Stage Engine</menu>
+    <files folder="admin">
+      <folder>services</folder>
+      <folder>src</folder>
+    </files>
+  </administration>
+
+  <files folder="site">
+    <folder>src</folder>
+    <folder>tmpl</folder>
+    <folder>lib</folder>
+  </files>
+</extension>
